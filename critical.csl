@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0">
+  <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
+  <info>
+    <title>critical</title>
+    <id>http://www.zotero.org/styles/critical</id>
+    <link rel="self" href="http://www.zotero.org/styles/critical"/>
+    <updated>2025-06-02T08:32:41+00:00</updated>
+  </info>
+  <citation>
+    <layout prefix="[" suffix="]" delimiter=", " vertical-align="sup">
+      <text variable="citation-number"/>
+    </layout>
+  </citation>
+  <bibliography>
+    <layout>
+      <group delimiter=" ">
+        <names variable="author" delimiter="; " and="text" delimiter-precedes-et-al="always" delimiter-precedes-last="always">
+          <name delimiter=" " et-al-min="19" et-al-use-first="7" initialize-with=".;" name-as-sort-order="all"/>
+        </names>
+        <text variable="title" suffix=". "/>
+        <text variable="container-title" form="short" font-style="italic" suffix="  "/>
+        <date variable="issued">
+          <date-part name="year" font-weight="bold" suffix=", "/>
+        </date>
+        <text variable="volume" font-style="italic" font-weight="" prefix=" " suffix=", "/>
+        <choose>
+          <if variable="page">
+            <text variable="page" prefix=" " suffix=". "/>
+          </if>
+          <else-if variable="article-number">
+            <text variable="article-number" prefix=" " suffix=". "/>
+          </else-if>
+        </choose>
+        <text variable="DOI" prefix="doi:"/>
+      </group>
+    </layout>
+  </bibliography>
+</style>
